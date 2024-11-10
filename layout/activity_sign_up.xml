@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <!-- First Name Input -->
+
+    <!-- Last Name Input -->
+
+    <EditText
+        android:id="@+id/firstName"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lastName"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/email"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/password"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <!-- Sign Up Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
+        android:layout_width="348dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:background="#000000"
+        android:text="Sign Up"
+        android:textColor="#FBFAFA"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/adamina"
+        android:text="Sign Up."
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
